@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f6d365, #66fcb3);
+    background-image: url(../tictactoc/HD-wallpaper-dr-doom-kills-thanos-avengers-comics-death-dr-doom-marvel-onlymarvel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game {
+    text-align: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #087df9;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.cell:hover {
+    background: rgb(5, 248, 110);
+}
+.winner {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: rgb(5, 171, 248);
+}
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    
+    background-color: yellow;
+    color: rgb(12, 1, 1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+}
+h1{
+    color: #66fcb3;
+}
+span{
+    color: red;
+}
+a{
+    color: yellow;
+}
